@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Martins Obaseki CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+</head>
+<body>  
+<div id="cv">
+    <div id="top">
+             <h1 align="center">
+                <div id="photo">
+                <img align="left" width="150px" height="150px" src="https://res.cloudinary.com/yuwa/image/upload/v1566703023/cv_photo_tqzlrj.jpg"
+                alt="cv photo" />
+                </div>
+                <strong>MARTINS OSAYUWAMEN OBASEKI</strong> </h1>
+            <p align="center">7, ELIZABETH ALFRED DRIVE, OFF PETER ODILI ROAD RIVERS STATE, NIGERIA
+            <br>PHONE: 07039187552 E-MAIL: <a href="mailto:yuwa619@gmail.com">yuwa619@gmail.com</a></p>
+    </div>
+    
+    <section>    
+    <div id="info">
+        <h2 align="center"><strong>PERSONAL INFORMATION</strong></h2>
+        <hr id="line">
+        <table>
+            <tr><td>Date of Birth: 16th, June 1990</td></tr>
+            <tr><td>Sex: Male</td></tr>
+            <tr><td>Marital Status: Single</td></tr>
+        </table>
+    </div>
+ </section>  
+ <section> 
+    <div id="objective">
+        <h2 align="center"><strong>OBJECTIVE</strong></h2>
+        <hr id="line">
+        <p>To develop my professional, analytical and research skills becoming an expert in my field thereby proffering ideas as
+        technical solutions to problems for the betterment of the industry
+        <br>
+        <br>
+        To also be a valuable asset to any organization, and to contribute to the growth and development of such organization
+        </p>
+    </div>
+</section>
+<section>
+    <div id="education">
+        <h2 align="center"><strong>EDUCATION</Strong></h2>
+            <hr id="line">
+            <table width="100%">
+                <tr>
+                    <td><strong>B. Eng. in Petroleum Engineering</strong></td>
+                    <td align="right">2007 – 2014</td>
+                </tr>
+                <tr>
+                    <td>UNIVERSITY OF PORT HARCOURT CHOBA, RIVERS, NIGERIA</td>
+                </tr>
+                <tr>
+                    <td>Second Class Upper Division</td>
+                </tr>
+                <tr>
+                    <td><strong>West Africa Examination Council (WAEC)</strong></td>
+                    <td align="right">2000 – 2006</td>
+                </tr>
+                <tr>
+                    <td>UNIBEN DEMONSTRATION SECONDARY SCHOOL, BENIN CITY, EDO, NIGERIA</td>
+                </tr>
+            </table>
+    </div>
+</section>
+<section>
+    <div id="work">
+        <h2 align="center"><strong>WORK EXPERIENCE</strong></h2>
+        <hr id="line">
+        <table width="100%">
+            <tr>
+                <td><strong>Cash Officer</strong></td>
+                <td align="right">November 2018 - date</td>
+            </tr>
+            <tr>
+                <td>
+                    Polaris Bank Limited
+                    <ul>
+                        <li>Responsible for cash management of the branch</li>
+                        <li>custodian of the branch ATM</li>
+                        <li>supervises the daily activities of the tellers</li>
+                        <li>Balancing and reconciliation of Branch General ledgers</li>
+                    </ul>
+                </td>   
+            </tr>
+        </table>
+    </div>
+</section>
+<section>
+    <div id="skills">
+        <h2 align="center">SKILLS</h2>
+        <hr id="line">
+        <div>
+        <h3><strong>Computer Skills</strong></h3>
+        <ul>
+            <li>Microsoft office</li>
+            <div class="container">
+                <div class="skills microsoft">90%</div>
+            </div>
+
+            <li>HTML</li>
+            <div class="container">
+                <div class="skills html">80%</div>
+            </div>
+            <li>CSS</li>
+            <div class="container">
+                <div class="skills css">70%</div>
+            </div>
+            <li>Graphic design</li>
+            <div class="container">
+                <div class="skills design">50%</div>
+            </div>
+        </ul>
+        </div>
+        <div>
+            <h3><strong>Personal Skills</strong></h3>
+            <ul>
+                <li>LEADERSHIP: Group leader for entrepreneurship project in the university.</li>
+                <li>COMMUNICATION: Effectively conversed thoughts and ideas to colleagues and superiors during my internship.</li>
+                <li>TEAM SPIRIT: Actively contributed and liaised with team members in a Well-Log Interpretation competition.</li>
+                <li>WILLINGNESS: Showed a desire to learn new methods and meet demanding standards as an intern.</li>
+                <li>PROBLEM SOLVING: Exhibited in solving riddles and brain teasers remarkably.</li>
+                <li>ANALYTICAL THINKING: Good ability to make mental pictures of technical issues and expectations.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section>
+<div class="form">
+    <hr id="line">
+    <h1><strong>CONTACT ME!!!</strong></h1>
+    <form name= "contact me" onclick="return validateForm()">
+        <label for="title">Title</label>
+        <select id="title" name="title">
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Miss">Miss</option>
+        </select>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" minlength="4" required placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" minlength="4" required placeholder="Your last name..">
+        <label for="E-MAIL">E-MAIL</label>
+        <input type="email" id="E-MAIL" name="E-MAIL" placeholder="Your E-MAIL.."> <br><br>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" minlength="20" required placeholder="Your message.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</div>
+</section>
+</div>
+<script>var x = document.getElementsByTagClassName("contact me");
+    x[0].submit();// Form submission
+    if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+    </script>
+    
+</body>
+</html>
